@@ -1227,7 +1227,7 @@ class _Slice(_SchedElement):
 
 	def __str__(self):
 		param = self._param
-		if self.name is not None and self.name is not '':
+		if self.name is not None and self.name != '':
 			param = self.name
 		slice = ''
 		if self._start is not None or self._end is not None:
